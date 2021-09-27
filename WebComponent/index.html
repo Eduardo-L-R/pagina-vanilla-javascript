@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+		<meta content="width=device-width;initial-scale=1" name="viewport" />
+        <title>WebComponents</title>
+		<script type="module" src="main.js"></script>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<modal-button value="Aprétame">
+			<h2 slot="header">Título custom</h2>
+			<p>Este es el contenido del modal</p>
+			<p slot="footer">Otro slot</p>
+		</modal-button>
+
+		<content-filter
+			placeholder="Buscar..."
+			filter-selector=".post"
+			inner-selectors="['.title','.content','.hashtags']"
+		></content-filter>
+
+		<div class="post">
+			<h3 class="title">Purus in massa tempor nec.</h3>
+			<p class="content">
+				Pellentesque dignissim enim, sit amet venenatis. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum! Morbi blandit cursus risus, at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis.
+			</p>
+			<p class="hashtags">#software-libre</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Tellus orci, ac auctor augue!</h3>
+			<p class="content">
+				Non nisi est, sit amet facilisis magna etiam tempor, orci eu lobortis elementum, nibh? Maecenas accumsan, lacus vel facilisis volutpat, est velit egestas dui, id ornare arcu odio ut sem nulla? Cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi.
+			</p>
+			<p class="hashtags">#software-libre</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Nulla facilisi nullam vehicula ipsum.</h3>
+			<p class="content">
+				Sit amet, aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare? Felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Libero volutpat sed cras ornare arcu!
+			</p>
+			<p class="hashtags">#osint</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Aliquet bibendum enim, facilisis gravida?</h3>
+			<p class="content">
+				Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Pretium aenean pharetra, magna ac placerat vestibulum, lectus mauris ultrices eros, in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas!
+			</p>
+			<p class="hashtags">#amorsh</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Ornare lectus sit amet est.</h3>
+			<p class="content">
+				Suspendisse ultrices gravida dictum fusce ut! Est ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc, consequat interdum? Mauris, in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa.
+			</p>
+			<p class="hashtags">#cultura-libre</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Curabitur gravida arcu ac tortor!</h3>
+			<p class="content">
+				Ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna! Ornare aenean euismod elementum nisi, quis eleifend quam adipiscing vitae proin sagittis, nisl rhoncus mattis rhoncus, urna neque viverra justo, nec ultrices dui!
+			</p>
+			<p class="hashtags">#programacion</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Eros, in cursus turpis massa.</h3>
+			<p class="content">
+				Libero nunc, consequat interdum varius sit amet, mattis vulputate enim nulla aliquet porttitor lacus, luctus accumsan tortor posuere ac ut consequat? Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa, eget egestas purus viverra accumsan in nisl nisi, scelerisque eu ultrices vitae, auctor eu augue ut lectus.
+			</p>
+			<p class="hashtags">#hacktivismo</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Nec ultrices dui sapien eget.</h3>
+			<p class="content">
+				Turpis egestas sed tempus, urna et pharetra pharetra, massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi tristique! Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi, quis eleifend quam adipiscing vitae proin sagittis, nisl rhoncus mattis.
+			</p>
+			<p class="hashtags">#privacidad</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Eget arcu dictum varius duis.</h3>
+			<p class="content">
+				Condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu. Auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc, consequat interdum varius sit amet?
+			</p>
+			<p class="hashtags">#hacking</p>
+		</div>
+		<div class="post">
+			<h3 class="title">Pulvinar neque laoreet suspendisse interdum.</h3>
+			<p class="content">
+				Diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc, sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis, bibendum ut tristique et. Consectetur purus ut faucibus pulvinar elementum integer enim neque, volutpat ac tincidunt vitae, semper quis lectus nulla at volutpat diam ut venenatis.
+			</p>
+			<p class="hashtags">#software-libre</p>
+		</div>
+
+		<!-- templates -->
+		<template id="content-filter-tpl">
+			<input type="search" class="content-filter-input">
+		</template>
+		<template id="modal-button-tpl">
+			<button class="trigger" type="button">button text</button>
+
+			<div>
+				<aside>
+					<header>
+						<slot name="header"></slot>
+					</header>
+					<section>
+						<slot>main content</slot>
+					</section>
+					<footer>
+						<slot name="footer"></slot>
+						<button class="close">Cerrar</button>
+					</footer>
+				</aside>
+			</div>
+
+			<style>
+				div {
+					position: fixed;
+					display: none;
+					justify-content: center;
+					align-items: center;
+					width: 100vw;
+					height: 100vh;
+					top: 0;
+					left: 0;
+					background-color: rgba(0,0,0,0.9);
+				}
+
+				:host(.show) div {
+					display: flex;
+				}
+
+				aside {
+					background-color: #fff;
+					width: 100%;
+					max-width: 800px;
+					height: 100%;
+					max-height: 500px;
+					text-align: center;
+				}
+			</style>
+		</template>
+	</body>
+</html>
